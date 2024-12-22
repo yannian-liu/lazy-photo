@@ -20,6 +20,7 @@ struct FaceReplaceView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(height: 200)
+                    .plateDisplay(.primary)
             }
             
             Button(action: {

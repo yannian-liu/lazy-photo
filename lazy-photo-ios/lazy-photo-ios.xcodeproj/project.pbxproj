@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BBB771902D185568002EC682 /* UIToolbox in Frameworks */ = {isa = PBXBuildFile; productRef = BBB7718F2D185568002EC682 /* UIToolbox */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BB8471B52D181CA500BF376A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB771902D185568002EC682 /* UIToolbox in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				BB8471A42D181CA400BF376A /* lazy-photo-ios */,
 				BB8471B72D181CA500BF376A /* lazy-photo-iosTests */,
 				BB8471C12D181CA500BF376A /* lazy-photo-iosUITests */,
+				BBB7718E2D185568002EC682 /* Frameworks */,
 				BB8471A32D181CA400BF376A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				BB8471BE2D181CA500BF376A /* lazy-photo-iosUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BBB7718E2D185568002EC682 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = "lazy-photo-ios";
 			packageProductDependencies = (
+				BBB7718F2D185568002EC682 /* UIToolbox */,
 			);
 			productName = "lazy-photo-ios";
 			productReference = BB8471A22D181CA400BF376A /* lazy-photo-ios.app */;
@@ -572,6 +586,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BBB7718F2D185568002EC682 /* UIToolbox */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB7FBDE72D184A0C009E2A2C /* XCRemoteSwiftPackageReference "ios-ui-toolbox" */;
+			productName = UIToolbox;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB84719A2D181CA400BF376A /* Project object */;
 }
