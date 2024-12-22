@@ -195,6 +195,9 @@
 			);
 			mainGroup = BB8471992D181CA400BF376A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BB7FBDE72D184A0C009E2A2C /* XCRemoteSwiftPackageReference "ios-ui-toolbox" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BB8471A32D181CA400BF376A /* Products */;
 			projectDirPath = "";
@@ -558,6 +561,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB7FBDE72D184A0C009E2A2C /* XCRemoteSwiftPackageReference "ios-ui-toolbox" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yannian-liu/ios-ui-toolbox/";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = BB84719A2D181CA400BF376A /* Project object */;
 }

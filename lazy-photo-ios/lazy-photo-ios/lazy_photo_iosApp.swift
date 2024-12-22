@@ -25,7 +25,7 @@ struct lazy_photo_iosApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FaceReplaceView()
         }
         .modelContainer(sharedModelContainer)
     }
