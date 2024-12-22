@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		BB8471B52D181CA500BF376A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB84719A2D181CA400BF376A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB8471A12D181CA400BF376A;
+			remoteInfo = "lazy-photo-ios";
+		};
+		BB8471BF2D181CA500BF376A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB84719A2D181CA400BF376A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB8471A12D181CA400BF376A;
+			remoteInfo = "lazy-photo-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB8471A22D181CA400BF376A /* lazy-photo-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lazy-photo-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8471B42D181CA500BF376A /* lazy-photo-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lazy-photo-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8471BE2D181CA500BF376A /* lazy-photo-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lazy-photo-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BB8471A42D181CA400BF376A /* lazy-photo-ios */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "lazy-photo-ios";
+			sourceTree = "<group>";
+		};
+		BB8471B72D181CA500BF376A /* lazy-photo-iosTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "lazy-photo-iosTests";
+			sourceTree = "<group>";
+		};
+		BB8471C12D181CA500BF376A /* lazy-photo-iosUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "lazy-photo-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB84719F2D181CA400BF376A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8471B12D181CA500BF376A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8471BB2D181CA500BF376A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB8471992D181CA400BF376A = {
+			isa = PBXGroup;
+			children = (
+				BB8471A42D181CA400BF376A /* lazy-photo-ios */,
+				BB8471B72D181CA500BF376A /* lazy-photo-iosTests */,
+				BB8471C12D181CA500BF376A /* lazy-photo-iosUITests */,
+				BB8471A32D181CA400BF376A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB8471A32D181CA400BF376A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB8471A22D181CA400BF376A /* lazy-photo-ios.app */,
+				BB8471B42D181CA500BF376A /* lazy-photo-iosTests.xctest */,
+				BB8471BE2D181CA500BF376A /* lazy-photo-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB8471A12D181CA400BF376A /* lazy-photo-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8471C82D181CA500BF376A /* Build configuration list for PBXNativeTarget "lazy-photo-ios" */;
+			buildPhases = (
+				BB84719E2D181CA400BF376A /* Sources */,
+				BB84719F2D181CA400BF376A /* Frameworks */,
+				BB8471A02D181CA400BF376A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BB8471A42D181CA400BF376A /* lazy-photo-ios */,
+			);
+			name = "lazy-photo-ios";
+			packageProductDependencies = (
+			);
+			productName = "lazy-photo-ios";
+			productReference = BB8471A22D181CA400BF376A /* lazy-photo-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB8471B32D181CA500BF376A /* lazy-photo-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8471CB2D181CA500BF376A /* Build configuration list for PBXNativeTarget "lazy-photo-iosTests" */;
+			buildPhases = (
+				BB8471B02D181CA500BF376A /* Sources */,
+				BB8471B12D181CA500BF376A /* Frameworks */,
+				BB8471B22D181CA500BF376A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB8471B62D181CA500BF376A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BB8471B72D181CA500BF376A /* lazy-photo-iosTests */,
+			);
+			name = "lazy-photo-iosTests";
+			packageProductDependencies = (
+			);
+			productName = "lazy-photo-iosTests";
+			productReference = BB8471B42D181CA500BF376A /* lazy-photo-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB8471BD2D181CA500BF376A /* lazy-photo-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8471CE2D181CA500BF376A /* Build configuration list for PBXNativeTarget "lazy-photo-iosUITests" */;
+			buildPhases = (
+				BB8471BA2D181CA500BF376A /* Sources */,
+				BB8471BB2D181CA500BF376A /* Frameworks */,
+				BB8471BC2D181CA500BF376A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB8471C02D181CA500BF376A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BB8471C12D181CA500BF376A /* lazy-photo-iosUITests */,
+			);
+			name = "lazy-photo-iosUITests";
+			packageProductDependencies = (
+			);
+			productName = "lazy-photo-iosUITests";
+			productReference = BB8471BE2D181CA500BF376A /* lazy-photo-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB84719A2D181CA400BF376A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					BB8471A12D181CA400BF376A = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					BB8471B32D181CA500BF376A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = BB8471A12D181CA400BF376A;
+					};
+					BB8471BD2D181CA500BF376A = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = BB8471A12D181CA400BF376A;
+					};
+				};
+			};
+			buildConfigurationList = BB84719D2D181CA400BF376A /* Build configuration list for PBXProject "lazy-photo-ios" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB8471992D181CA400BF376A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BB8471A32D181CA400BF376A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB8471A12D181CA400BF376A /* lazy-photo-ios */,
+				BB8471B32D181CA500BF376A /* lazy-photo-iosTests */,
+				BB8471BD2D181CA500BF376A /* lazy-photo-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB8471A02D181CA400BF376A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8471B22D181CA500BF376A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8471BC2D181CA500BF376A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB84719E2D181CA400BF376A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8471B02D181CA500BF376A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8471BA2D181CA500BF376A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB8471B62D181CA500BF376A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB8471A12D181CA400BF376A /* lazy-photo-ios */;
+			targetProxy = BB8471B52D181CA500BF376A /* PBXContainerItemProxy */;
+		};
+		BB8471C02D181CA500BF376A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB8471A12D181CA400BF376A /* lazy-photo-ios */;
+			targetProxy = BB8471BF2D181CA500BF376A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BB8471C62D181CA500BF376A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB8471C72D181CA500BF376A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB8471C92D181CA500BF376A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lazy-photo-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 8LXFU6X2L5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "juan-studio.lazy-photo-ios.lazy-photo-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB8471CA2D181CA500BF376A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lazy-photo-ios/Preview Content\"";
+				DEVELOPMENT_TEAM = 8LXFU6X2L5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "juan-studio.lazy-photo-ios.lazy-photo-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB8471CC2D181CA500BF376A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LXFU6X2L5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "juan-studio.lazy-photo-ios.lazy-photo-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lazy-photo-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lazy-photo-ios";
+			};
+			name = Debug;
+		};
+		BB8471CD2D181CA500BF376A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LXFU6X2L5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "juan-studio.lazy-photo-ios.lazy-photo-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lazy-photo-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/lazy-photo-ios";
+			};
+			name = Release;
+		};
+		BB8471CF2D181CA500BF376A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LXFU6X2L5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "juan-studio.lazy-photo-ios.lazy-photo-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lazy-photo-ios";
+			};
+			name = Debug;
+		};
+		BB8471D02D181CA500BF376A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8LXFU6X2L5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "juan-studio.lazy-photo-ios.lazy-photo-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lazy-photo-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB84719D2D181CA400BF376A /* Build configuration list for PBXProject "lazy-photo-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8471C62D181CA500BF376A /* Debug */,
+				BB8471C72D181CA500BF376A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8471C82D181CA500BF376A /* Build configuration list for PBXNativeTarget "lazy-photo-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8471C92D181CA500BF376A /* Debug */,
+				BB8471CA2D181CA500BF376A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8471CB2D181CA500BF376A /* Build configuration list for PBXNativeTarget "lazy-photo-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8471CC2D181CA500BF376A /* Debug */,
+				BB8471CD2D181CA500BF376A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8471CE2D181CA500BF376A /* Build configuration list for PBXNativeTarget "lazy-photo-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8471CF2D181CA500BF376A /* Debug */,
+				BB8471D02D181CA500BF376A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB84719A2D181CA400BF376A /* Project object */;
+}
