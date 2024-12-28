@@ -23,6 +23,9 @@ struct FaceReplaceView: View {
                     .scaledToFit()
                     .frame(height: 200)
                     .plateDisplay(.primary)
+                    .onTapGesture {
+                        isOriginalImagePickerPresented = true
+                    }
             } else {
                 Button(action: {
                     isOriginalImagePickerPresented = true
