@@ -10,31 +10,34 @@ import SwiftData
 
 struct FaceReplaceView: View {
     @Environment(\.modelContext) private var modelContext
-    @State private var isImagePickerPresented = false
-    @State private var selectedImage: UIImage?
+    @State private var isOriginalImagePickerPresented = false
+    @State private var originalImage: UIImage?
+    @State private var faceImage: UIImage?
+
 
     var body: some View {
         VStack {
-            if let image = selectedImage {
+            if let image = originalImage {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
                     .frame(height: 200)
                     .plateDisplay(.primary)
+            } else {
+                Button(action: {
+                    isOriginalImagePickerPresented = true
+                }) {
+                    Label("Upload Photo", systemImage: "photo.fill")
+                }
+                .padding()
+
             }
             
-            Button(action: {
-                isImagePickerPresented = true
-            }) {
-                Label("Upload Photo", systemImage: "photo.fill")
-            }
-            .padding()
-            
-            // ... existing List view code ...
         }
-        .sheet(isPresented: $isImagePickerPresented) {
-            ImagePicker(image: $selectedImage)
+        .sheet(isPresented: $isOriginalImagePickerPresented) {
+            ImagePicker(image: $originalImage)
         }
+
     }
 }
 
