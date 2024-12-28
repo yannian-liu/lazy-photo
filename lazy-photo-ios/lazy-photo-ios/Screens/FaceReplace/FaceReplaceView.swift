@@ -14,42 +14,60 @@ struct FaceReplaceView: View {
     @ObservedObject private var viewModel = FaceReplaceViewModel()
 
     var body: some View {
-        VStack {
-            if let image = viewModel.originalImage {
-                Image(uiImage: image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 200)
-                    .plateDisplay(.card)
-                    .onTapGesture {
-                        viewModel.isOriginalImagePickerPresented = true
-                    }
-            } else {
-                StatableButtonView(configuration: viewModel.addOriginalButtonConfiguration)
+        ScrollView {
+            
+            VStack {
+                Text("Face Replacement")
+                    .font(.headline)
+                
+                Spacer().frame(height: 30)
+                
+                Text("Original Photo").font(.callout)
 
+                if let image = viewModel.originalImage {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 200)
+                        .plateDisplay(.card)
+                        .onTapGesture {
+                            viewModel.isOriginalImagePickerPresented = true
+                        }
+                } else {
+                    StatableButtonView(configuration: viewModel.addOriginalButtonConfiguration)
+
+                }
+                
+                Spacer().frame(height: 30)
+                
+                Text("Replacement Photo").font(.callout)
+
+                if let image = viewModel.replacementImage {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 200)
+                        .plateDisplay(.card)
+                        .onTapGesture {
+                            viewModel.isReplacementImagePickerPresented = true
+                        }
+                } else {
+                    StatableButtonView(configuration: viewModel.addReplacementButtonConfiguration)
+                }
+                
+                Spacer().frame(height: 60)
+                
+                StatableButtonView(configuration: viewModel.generateButtonConfiguration)
+            }
+            .sheet(isPresented: $viewModel.isOriginalImagePickerPresented) {
+                ImagePicker(image: $viewModel.originalImage)
+            }
+            .sheet(isPresented: $viewModel.isReplacementImagePickerPresented) {
+                ImagePicker(image: $viewModel.replacementImage)
             }
             
-            if let image = viewModel.replacementImage {
-                Image(uiImage: image)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 200)
-                    .plateDisplay(.card)
-                    .onTapGesture {
-                        viewModel.isReplacementImagePickerPresented = true
-                    }
-            } else {
-                StatableButtonView(configuration: viewModel.addReplacementButtonConfiguration)
-            }
-            
-            StatableButtonView(configuration: viewModel.generateButtonConfiguration)
         }
-        .sheet(isPresented: $viewModel.isOriginalImagePickerPresented) {
-            ImagePicker(image: $viewModel.originalImage)
-        }
-        .sheet(isPresented: $viewModel.isReplacementImagePickerPresented) {
-            ImagePicker(image: $viewModel.replacementImage)
-        }
+        .contentMargins(.all, 16)
 
     }
 }
