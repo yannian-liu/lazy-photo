@@ -9,7 +9,7 @@ import UIToolbox
 
 extension PlateDisplay {
     static var primary: Self {
-        .init(sizeStyle: .paddingDefaultWithInfiniteWidth, color: .white, shape: .rectangle(cornerRadius: 10), border: .primary)
+        .init(sizeStyle: .padding(edgeInsets: .init(top: 5, leading: 5, bottom: 5, trailing: 5)), color: .clear, shape: .rectangle(cornerRadius: 0), border: .primary)
     }
 }
 

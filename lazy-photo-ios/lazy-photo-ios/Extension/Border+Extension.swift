@@ -8,5 +8,5 @@
 import UIToolbox
 
 extension PlateDisplay.Border {
-    static var primary: Self { .init(width: 2, dash: [], color: .black, gap: 0) }
+    static var primary: Self { .init(width: 2, dash: [], color: .border, gap: 0) }
 }
