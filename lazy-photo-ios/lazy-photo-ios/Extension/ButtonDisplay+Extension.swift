@@ -14,4 +14,10 @@ extension StatableButtonViewConfiguration<Text>.Display {
             contentDisplay: .init(font: .headline, color: .primaryRevert, multilineTextAlignment: .center),
             plateDisplay: .primaryButton)
     }
+    
+    static var primaryButtonDisabled: Self {
+        .init(
+            contentDisplay: .init(font: .headline, color: .primaryRevert.opacity(0.5), multilineTextAlignment: .center),
+            plateDisplay: .primaryButtonDisabled)
+    }
 }

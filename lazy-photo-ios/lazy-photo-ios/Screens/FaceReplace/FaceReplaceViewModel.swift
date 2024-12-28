@@ -13,6 +13,8 @@ import SwiftUI
 class FaceReplaceViewModel: ObservableObject {
     @Published var isOriginalImagePickerPresented = false
     @Published var isReplacementImagePickerPresented = false
+    @Published var originalImage: UIImage?
+    @Published var replacementImage: UIImage?
 
     lazy var addOriginalButtonConfiguration: StatableButtonViewConfiguration = .init(
         content: Text("Add original photo"),
@@ -34,4 +36,25 @@ class FaceReplaceViewModel: ObservableObject {
             isReplacementImagePickerPresented = true
     }
 
+    lazy var generateButtonConfiguration: StatableButtonViewConfiguration = .init(
+        content: Text("Generate"),
+        activeDisplay: .primaryButton,
+        disabledDisplay: .primaryButtonDisabled,
+        highlightedDisplay: nil,
+        animation: .scale,
+        statePublisher: Publishers.CombineLatest(
+            $originalImage.eraseToAnyPublisher(),
+            $replacementImage.eraseToAnyPublisher()
+        )
+        .map { original, replacement in
+            (original != nil && replacement != nil) ? .active : .disabled
+        }
+        .eraseToAnyPublisher())
+    { [unowned self] in
+            generate()
+    }
+    
+    func generate() {
+        
+    }
 }

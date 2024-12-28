@@ -16,5 +16,9 @@ extension PlateDisplay {
         .init(sizeStyle: .padding(edgeInsets: .init(top: 10, leading: 15, bottom: 10, trailing: 15)), color: .primary, shape: .capsule, border: nil)
 
     }
+    
+    static var primaryButtonDisabled: Self {
+        .init(sizeStyle: .padding(edgeInsets: .init(top: 10, leading: 15, bottom: 10, trailing: 15)), color: .primary.opacity(0.5), shape: .capsule, border: nil)
+    }
 }
 

@@ -12,12 +12,10 @@ import UIToolbox
 struct FaceReplaceView: View {
     @Environment(\.modelContext) private var modelContext
     @ObservedObject private var viewModel = FaceReplaceViewModel()
-    @State private var originalImage: UIImage?
-    @State private var replacementImage: UIImage?
 
     var body: some View {
         VStack {
-            if let image = originalImage {
+            if let image = viewModel.originalImage {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
@@ -31,7 +29,7 @@ struct FaceReplaceView: View {
 
             }
             
-            if let image = replacementImage {
+            if let image = viewModel.replacementImage {
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
@@ -43,12 +41,14 @@ struct FaceReplaceView: View {
             } else {
                 StatableButtonView(configuration: viewModel.addReplacementButtonConfiguration)
             }
+            
+            StatableButtonView(configuration: viewModel.generateButtonConfiguration)
         }
         .sheet(isPresented: $viewModel.isOriginalImagePickerPresented) {
-            ImagePicker(image: $originalImage)
+            ImagePicker(image: $viewModel.originalImage)
         }
         .sheet(isPresented: $viewModel.isReplacementImagePickerPresented) {
-            ImagePicker(image: $replacementImage)
+            ImagePicker(image: $viewModel.replacementImage)
         }
 
     }
