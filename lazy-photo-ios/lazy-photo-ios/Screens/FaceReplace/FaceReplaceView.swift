@@ -7,13 +7,13 @@
 
 import SwiftUI
 import SwiftData
+import UIToolbox
 
 struct FaceReplaceView: View {
     @Environment(\.modelContext) private var modelContext
-    @State private var isOriginalImagePickerPresented = false
+    @ObservedObject private var viewModel = FaceReplaceViewModel()
     @State private var originalImage: UIImage?
     @State private var faceImage: UIImage?
-
 
     var body: some View {
         VStack {
@@ -22,22 +22,17 @@ struct FaceReplaceView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(height: 200)
-                    .plateDisplay(.primary)
+                    .plateDisplay(.card)
                     .onTapGesture {
-                        isOriginalImagePickerPresented = true
+                        viewModel.isOriginalImagePickerPresented = true
                     }
             } else {
-                Button(action: {
-                    isOriginalImagePickerPresented = true
-                }) {
-                    Label("Upload Photo", systemImage: "photo.fill")
-                }
-                .padding()
+                StatableButtonView(configuration: viewModel.originalButtonConfiguration)
 
             }
             
         }
-        .sheet(isPresented: $isOriginalImagePickerPresented) {
+        .sheet(isPresented: $viewModel.isOriginalImagePickerPresented) {
             ImagePicker(image: $originalImage)
         }
 

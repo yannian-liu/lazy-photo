@@ -6,11 +6,12 @@
 //
 
 import UIToolbox
+import SwiftUI
 
-//extension StatableButtonViewConfiguration<Text>.Display {
-//    var primary: Self {
-//        .init(
-//            contentDisplay: .init(font: .headline, color: .black, multilineTextAlignment: <#T##TextAlignment#>),
-//            plateDisplay: <#T##PlateDisplay#>)
-//    }
-//}
+extension StatableButtonViewConfiguration<Text>.Display {
+    static var primaryButton: Self {
+        .init(
+            contentDisplay: .init(font: .headline, color: .primaryRevert, multilineTextAlignment: .center),
+            plateDisplay: .primaryButton)
+    }
+}
