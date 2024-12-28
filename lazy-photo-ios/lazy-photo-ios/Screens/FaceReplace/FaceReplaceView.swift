@@ -13,7 +13,7 @@ struct FaceReplaceView: View {
     @Environment(\.modelContext) private var modelContext
     @ObservedObject private var viewModel = FaceReplaceViewModel()
     @State private var originalImage: UIImage?
-    @State private var faceImage: UIImage?
+    @State private var replacementImage: UIImage?
 
     var body: some View {
         VStack {
@@ -27,13 +27,28 @@ struct FaceReplaceView: View {
                         viewModel.isOriginalImagePickerPresented = true
                     }
             } else {
-                StatableButtonView(configuration: viewModel.originalButtonConfiguration)
+                StatableButtonView(configuration: viewModel.addOriginalButtonConfiguration)
 
             }
             
+            if let image = replacementImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200)
+                    .plateDisplay(.card)
+                    .onTapGesture {
+                        viewModel.isReplacementImagePickerPresented = true
+                    }
+            } else {
+                StatableButtonView(configuration: viewModel.addReplacementButtonConfiguration)
+            }
         }
         .sheet(isPresented: $viewModel.isOriginalImagePickerPresented) {
             ImagePicker(image: $originalImage)
+        }
+        .sheet(isPresented: $viewModel.isReplacementImagePickerPresented) {
+            ImagePicker(image: $replacementImage)
         }
 
     }
