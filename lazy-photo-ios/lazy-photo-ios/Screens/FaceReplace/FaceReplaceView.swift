@@ -17,12 +17,12 @@ struct FaceReplaceView: View {
         ScrollView {
             
             VStack {
-                Text("Face Replacement")
+                Text("face_replacement".localized)
                     .font(.headline)
                 
                 Spacer().frame(height: 30)
                 
-                Text("Original Photo").font(.callout)
+                Text("original_photo".localized).font(.callout)
 
                 if let image = viewModel.originalImage {
                     Image(uiImage: image)
@@ -40,7 +40,7 @@ struct FaceReplaceView: View {
                 
                 Spacer().frame(height: 30)
                 
-                Text("Replacement Photo").font(.callout)
+                Text("replacement_photo".localized).font(.callout)
 
                 if let image = viewModel.replacementImage {
                     Image(uiImage: image)

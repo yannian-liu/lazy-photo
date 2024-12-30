@@ -17,7 +17,7 @@ class FaceReplaceViewModel: ObservableObject {
     @Published var replacementImage: UIImage?
 
     lazy var addOriginalButtonConfiguration: StatableButtonViewConfiguration = .init(
-        content: Text("Add original photo"),
+        content: Text("add_original_photo".localized),
         activeDisplay: .primaryButton,
         disabledDisplay: nil,
         highlightedDisplay: nil,
@@ -27,7 +27,7 @@ class FaceReplaceViewModel: ObservableObject {
     }
     
     lazy var addReplacementButtonConfiguration: StatableButtonViewConfiguration = .init(
-        content: Text("Add replacement photo"),
+        content: Text("add_replacement_photo".localized),
         activeDisplay: .primaryButton,
         disabledDisplay: nil,
         highlightedDisplay: nil,
@@ -37,7 +37,7 @@ class FaceReplaceViewModel: ObservableObject {
     }
 
     lazy var generateButtonConfiguration: StatableButtonViewConfiguration = .init(
-        content: Text("Generate"),
+        content: Text("generate".localized),
         activeDisplay: .primaryButton,
         disabledDisplay: .primaryButtonDisabled,
         highlightedDisplay: nil,

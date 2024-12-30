@@ -1,0 +1,7 @@
+// Simplified Chinese
+"face_replacement" = "人像替换";
+"original_photo" = "原始照片";
+"replacement_photo" = "替换照片";
+"add_original_photo" = "添加原始照片";
+"add_replacement_photo" = "添加替换照片";
+"generate" = "生成"; 

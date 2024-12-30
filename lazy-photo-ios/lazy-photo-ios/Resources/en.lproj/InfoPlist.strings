@@ -1,0 +1,3 @@
+ 
+"CFBundleDisplayName" = "Lazy Photo";
+"NSPhotoLibraryUsageDescription" = "We need access to your photos to select images for face replacement.";
